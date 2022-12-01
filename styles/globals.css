@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  @apply bg-slate-900 text-sky-50;
+}
+
+body {
+  @apply pb-20;
+
+  @screen lg {
+    @apply pb-0;
+  }
+}
+
+.card {
+  @apply p-6 rounded-lg bg-sky-50/[0.035] drop-shadow-lg filter-none ring-1 ring-black/[0.1];
+
+  @screen lg {
+    @apply p-8;
+  }
+}
+
+.btn {
+  @apply h-[40px] flex justify-center items-center px-6 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-900 hover:bg-sky-500/[.9] font-medium drop-shadow-lg hover:scale-[1.02];
+}
+
+.btn-outline {
+  @apply bg-slate-900/[.2] hover:bg-slate-900/[.4] text-sky-50 border border-solid border-slate-600;
+}
+
+.connect-wallet .wallet-adapter-dropdown,
+.connect-wallet .wallet-adapter-button {
+  @apply h-[40px] border border-solid border-slate-600 rounded-full drop-shadow-lg;
+}
+
+.wallet-adapter-button-start-icon {
+  @apply hidden;
+}
+
+a {
+  @apply cursor-pointer;
+}
+
+.bg-gray-dark {
+  @apply bg-gray-800;
+}
+
+input[type="number"].input-number::-webkit-inner-spin-button,
+input[type="number"].input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

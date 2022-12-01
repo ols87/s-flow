@@ -1,0 +1,17 @@
+.wrapper {
+  @apply w-full fixed bottom-0 bg-slate-900 z-10;
+}
+
+.links {
+  @apply flex justify-evenly items-center bg-black/[0.15];
+}
+
+@screen lg {
+  .wrapper {
+    @apply w-full max-w-[250px] p-7 relative bg-transparent;
+  }
+
+  .links {
+    @apply block bg-transparent;
+  }
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  @apply mt-4 mr-6 ml-6 mb-24;
+}
+
+@screen lg {
+  .wrapper {
+    @apply ml-0 mb-6 w-[50%];
+  }
+}
+
+.title {
+  @apply text-sky-50 mt-7 mb-4;
+}

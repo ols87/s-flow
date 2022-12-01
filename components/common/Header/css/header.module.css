@@ -1,0 +1,41 @@
+.header {
+  @apply flex justify-between items-stretch p-6 border-b border-solid border-sky-50/[0.05];
+}
+
+.logo {
+  @apply h-[40px];
+}
+
+.logo img {
+  @apply h-full;
+}
+
+.actions {
+  @apply flex justify-between items-center;
+}
+
+button.payment {
+  @apply fixed p-3 bottom-[90px] h-auto right-6;
+}
+
+.payment span {
+  @apply hidden;
+}
+
+.paymentIcon {
+  @apply w-8 h-8;
+}
+
+@screen sm {
+  button.payment {
+    @apply relative bottom-0 px-6 h-[40px] right-0 mr-4;
+  }
+
+  .payment span {
+    @apply inline;
+  }
+
+  .paymentIcon {
+    @apply hidden;
+  }
+}

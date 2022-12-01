@@ -1,0 +1,27 @@
+.wrapper {
+  @apply z-50 fixed bottom-4 inset-x-4 w-auto;
+  @apply flex justify-between items-center p-4;
+  @apply md:top-4 md:right-4 md:left-auto md:bottom-auto md:w-full md:max-w-sm;
+  @apply shadow-lg rounded-lg bg-slate-800;
+  @apply focus:outline-none focus-visible:ring focus-visible:ring-sky-500 focus-visible:ring-opacity-75;
+}
+
+.close {
+  @apply font-medium p-2 text-sm hover:scale-[1.02];
+}
+
+.title {
+  @apply font-medium;
+}
+
+.description {
+  @apply mt-1 text-sm;
+}
+
+.success {
+  @apply bg-green-700;
+}
+
+.error {
+  @apply bg-rose-800;
+}

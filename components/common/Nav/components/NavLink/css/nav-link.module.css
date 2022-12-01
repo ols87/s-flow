@@ -1,0 +1,25 @@
+.item {
+  @apply hover:text-blue-200 hover:scale-[1.015];
+}
+
+.active {
+  @apply text-sky-400 hover:text-sky-400;
+}
+
+.link {
+  @apply flex flex-col items-center text-xs font-medium py-3;
+}
+
+.icon {
+  @apply h-6 w-6 mb-1;
+}
+
+@screen lg {
+  .link {
+    @apply w-full flex-row mb-10 py-0 text-lg;
+  }
+
+  .icon {
+    @apply h-8 w-8 mr-8 mb-0;
+  }
+}

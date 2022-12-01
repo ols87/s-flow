@@ -1,0 +1,19 @@
+.backdrop {
+  @apply fixed inset-0 bg-black bg-opacity-25;
+}
+
+.panelWrapper {
+  @apply flex min-h-full items-center justify-center p-4 text-center;
+}
+
+.panel {
+  @apply min-w-[300px] max-w-[380px] transform overflow-hidden rounded-2xl bg-slate-800 p-6 text-left align-middle shadow-xl transition-all ring-2 ring-black/[0.15];
+}
+
+.close {
+  @apply absolute top-[2px] right-[-3px] text-sky-50/[0.5] hover:text-sky-50/[0.2] hover:scale-[1.1];
+}
+
+.title {
+  @apply text-xl font-bold leading-6 relative;
+}

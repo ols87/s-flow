@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex;
+}
+
+.outlet {
+  @apply flex-1;
+}

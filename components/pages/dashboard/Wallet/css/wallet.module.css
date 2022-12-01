@@ -1,0 +1,68 @@
+.layout {
+  @apply grid gap-6 grid-rows-1 grid-cols-1;
+}
+
+.title {
+  @apply text-sky-50 mt-7 mb-4;
+}
+
+.card {
+  @apply flex flex-col items-start;
+}
+
+.amount {
+  @apply mt-3 text-3xl font-bold;
+}
+
+.unlocks {
+  @apply flex flex-col items-center justify-center text-center h-full;
+}
+
+.unlocks p {
+  @apply my-2;
+}
+
+.unlocksTitle {
+  @apply text-xl font-bold;
+}
+
+.withdraw {
+  @apply mt-3;
+}
+
+.unlockable {
+  @apply mt-5;
+}
+
+.link {
+  @apply text-sky-400 hover:text-sky-500 hover:scale-[1.02] hover:drop-shadow-md font-medium;
+}
+
+@screen md {
+  .layout {
+    @apply grid gap-6 grid-rows-3 grid-cols-2;
+  }
+
+  .layout > div:last-of-type {
+    grid-area: 1/2/4/3;
+  }
+}
+
+@screen xl {
+  .layout {
+    @apply grid gap-6 grid-rows-3 grid-cols-2;
+  }
+
+  .layout > div:last-of-type {
+    grid-area: 1/2/4/3;
+  }
+
+  .card {
+    @apply flex-row  justify-between;
+  }
+
+  .withdraw,
+  .unlockable {
+    @apply mt-0;
+  }
+}
